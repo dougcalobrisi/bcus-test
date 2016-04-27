@@ -1,4 +1,4 @@
-# bcus-test
+# bcus-test [![Build Status](https://travis-ci.org/dougcalobrisi/bcus-test.svg?branch=master)](https://travis-ci.org/dougcalobrisi/bcus-test)
 This is a simple Ruby/Sinatra application that makes use of TravisCI for CI and Docker for local development and deployment.
 
 ## Building the Docker image
