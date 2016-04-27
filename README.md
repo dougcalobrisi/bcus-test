@@ -9,7 +9,7 @@ To clone the repo:
 git clone https://github.com/dougcalobrisi/bcus-test
 ```
 
-Then, to build the docker image and tag it as *bcus-devtest* in your local docker environment, change to the directory in which you've cloned the repository and run:
+Then, to build the docker image and tag it as *bcus-test* in your local docker environment, change to the directory in which you've cloned the repository and run:
 ```
 docker build -t bcus-test .
 ```
