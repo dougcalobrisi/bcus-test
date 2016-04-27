@@ -21,13 +21,13 @@ Tests are automatically ran via TravisCI upon commit, merge, and pull requests. 
 ### Running Tests Locally
 Tests can be run locally using Docker. You'll want to ensure you run docker in interactive mode to view the results. You must have first build the docker image as instructed above.
 ```
-docker run -t bcus-test rake test
+docker run -i -t bcus-test rake test
 ```
 
 ## Running the application
 The docker image can be ran in daemon mode and have the port exposed by the Dockerfile (4567) bound to 0.0.0.0:4567. As an example:
 ```
-docker run -p 4567:4567 -d bcus-test
+docker run -d -p 4567:4567 -t bcus-test
 ```
 You should then be able to view the application in your browser; if running locally: http://localhost:4567, else http://hostname:4567.
 
