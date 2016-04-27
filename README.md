@@ -29,7 +29,7 @@ The docker image can be ran in daemon mode and have the port exposed by the Dock
 ```
 docker run -p 4567:4567 -d bcus-test
 ```
-You should then be able to view the application in your browser; if running locally: http://localhost:4567, else http://<host>:4567.
+You should then be able to view the application in your browser; if running locally: http://localhost:4567, else http://hostname:4567.
 
 ## Scaling for production
 This docker image can be utilized in a production environment using a container orchestration tool such as Marathon/Mesos, Google Container Engine, Docker Swarm, Amazon Container Service, and others. To do so, you will want to run multiple instances of the container across multiple hosts and front it with a load balancer that does health checks. The combination of Apache Marathon and Mesos along with Bamboo for automatic configuration of HAProxy is an especially potent mix and runs on all types of infrastructure without any real vendor lock-in.
